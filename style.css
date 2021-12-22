@@ -1,0 +1,211 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+:root {
+    --text-color: rgb(112, 112, 112);
+    --text-primary: rgb(61, 61, 61);
+    --text-second: rgb(136, 136, 136);
+    --background-color: rgb(255, 255, 255);
+    --accent-color: rgb(165, 9, 56);
+    --text-width: 480px;
+}
+
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    margin: 0;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+p {
+    color: var(--text-color);
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 400;
+    margin: 20px auto;
+}
+
+a {
+    color: var(--accent-color);
+    border-bottom: 1px dotted var(--accent-color);
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+}
+
+.navbar {
+    width: 100%;    
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 6px 0 8px 0;
+}
+
+.navbar a {
+    border-bottom: none;
+    color: var(--text-color);;
+}
+
+.navbar_menu.active {
+    display: flex;
+} 
+
+.navbar_logo {
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 15px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.navbar_logo i {
+    color: var(--accent-color);
+}
+
+.navbar_header {
+    position: absolute;
+    margin: auto;
+    width: 50%;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.navbar_links {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    margin-right: 15px;
+}
+
+.navbar_links li {
+    font-size: 18px;
+    padding: 0 0 0 15px;
+}
+
+section .intro_img {
+    width: 100%;
+    height: 500px;
+    background-color: cornflowerblue;
+    margin-bottom: 50px;
+}
+
+section.intro h1 {
+    color: var(--text-primary);
+    font-size: 50px;
+    line-height: 65px;
+    letter-spacing: 0;
+    text-align: center;
+    margin: 30px auto;
+    font-weight: 900;
+    max-width: 900px;
+    -webkit-font-smoothing: antialiased;
+}
+
+section.intro p {
+    margin: auto;
+    max-width: 520px;
+    font-size: 22px;
+    line-height: 36px;
+    text-align: left;
+}
+
+
+section.standard .text {
+    margin: 80px auto 40px auto;
+    width: var(--text-width);
+}
+
+section.standard .text h2{
+    color: var(--text-primary);
+    
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 60px;
+}
+
+section.standard .text h3{
+    color: var(--text-primary);
+    font-weight: 700;
+    margin-top: 60px;
+}
+
+section.standard .graphic {
+    margin: 0 auto 40px auto;
+    width: 680px;
+    height: 300px;
+    background-color: cadetblue;
+}
+
+section.standard .credit {
+    
+    margin: 130px auto 30px auto;
+    width: var(--text-width);
+}
+
+section.standard strong {
+    margin: 0 0 0 8px;
+}
+
+section.standard .credit p {
+    color: var(--text-second);
+    font-size: 16px;
+    line-height: 26px;
+}
+
+aside {
+    padding: 60px auto;
+    margin: 60px auto
+}
+
+aside .related_storys {
+    width: var(--text-width);
+    margin: auto;
+}
+
+aside .related_storys p {
+    line-height: 20px;
+    margin: 0 auto 10px auto;
+}
+
+footer .related_label {
+    width: 100%;
+}
+
+footer .related_label p {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 20px;
+    text-align: center;
+    margin: 35px auto;
+}
+
+
+
+@media screen and (max-width: 768px)
+{
+    :root {
+        --text-width: 90%;
+    }
+
+    .navbar_header {
+        display: none;
+    }
+
+    section.intro p {
+        max-width: 90%;
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    section.standard .graphic {
+        width: 100%;
+    }
+
+}

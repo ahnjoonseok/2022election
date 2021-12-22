@@ -1,0 +1,93 @@
+.pc {
+    display: inherit;
+}
+
+.mobile {
+    display: none;
+}
+
+.invisible {
+    opacity: 0.2;
+}
+
+.visible {
+    opacity: 1;
+}
+
+.scrollgraphic-wrapper {
+    top: 0;
+    position: sticky;
+}
+
+.scrollgraphic-items {
+    position: relative;
+    z-index: 2;
+}
+
+.cookmap {
+    position: relative;
+}
+
+.scrollgraphic-img {
+    top: 0;
+    width: 100%;    
+}
+
+.scrollgraphic-img-over {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.scrollitem {
+    margin: 0 0 300px 0; 
+}
+
+.itembox {
+    width: 400px;
+    padding: 20px 30px;
+    border: rgb(214, 214, 214) solid 1px;
+    background-color: white;
+    margin-right: 10%;
+    margin-left: auto;
+}
+
+
+
+@media screen and (max-width: 768px)
+{
+    .pc {
+        display: none;
+    }
+    
+    .mobile {
+        display: inherit;
+    }
+
+    .itembox {
+        width: 85%;
+        padding: 3% 3%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .scrollitem {
+        margin: 0 0 90vh 0; 
+    }
+
+    .scrollgraphic-img {
+        top: 0;
+        width: 100%;    
+    }
+    
+    .scrollgraphic-img-over {
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+    }
+
+}
